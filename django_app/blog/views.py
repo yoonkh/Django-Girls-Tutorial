@@ -10,7 +10,7 @@ def post_list(request):
 
     context = {
         'title': 'Postlist from post_list view',
-        'posts': posts,
+        'posts': post,
     }
     # return HttpResponse('<html><body>Post List</body></html>')
     return render(request, 'blog/post_list.html', context=context)
